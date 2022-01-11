@@ -12,24 +12,3 @@ incrementBtn.addEventListener("click", () => {
 })
 
 
-
-
-let counterValue = 0;
-const refs = {
-  decrementButton: document.querySelector(`[data-action="decrement"]`),
-  incrementButton: document.querySelector(`[data-action="increment"]`),
-  counter: document.querySelector(`#value`),
-}
-refs.decrementButton.addEventListener(`click`, increment)
-refs.incrementButton.addEventListener(`click`, decrement)
-function increment(){
-  counterValue -=  1;
-  refs.counter.textContent = `${counterValue}`
-}
-function decrement(){
-  counterValue += 1;
-  refs.counter.textContent = `${counterValue}`
-}
-
-
-
