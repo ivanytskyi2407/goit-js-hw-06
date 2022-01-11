@@ -14,9 +14,9 @@ const images = [
 ];
 
 const listWithClass = document.querySelector('.gallery');
-images.forEach(image => {
+images.forEach(({url,alt}) => {
   const liEl = document.createElement('li');
   liEl.classList.add('gallery_item');
-  liEl.insertAdjacentHTML('beforeend', `<img class = "liEl__img", src=${image.url}, alt=${image.alt}>`);
+  liEl.insertAdjacentHTML('beforeend', `<img class = "liEl__img", src=${url}, alt=${alt}>`);
   listWithClass.append(liEl);
 });
