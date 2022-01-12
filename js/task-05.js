@@ -4,8 +4,8 @@ const refs = {
 };
 
 refs.input.addEventListener("input", onInpunChange);
-function onInpunChange(event) {
-  let inputText = event.currentTarget.value;
+function onInpunChange({currentTarget}) {
+  let inputText = currentTarget.value;
   if (inputText === "") {
     inputText = `Anonymous`;
   }
