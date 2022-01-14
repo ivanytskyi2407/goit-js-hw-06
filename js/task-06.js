@@ -10,6 +10,6 @@ function onInputChange({ currentTarget }) {
   );
   textInput.classList.toggle(
     `invalid`,
-    textInputLength !=== textInputInstallLength
+    textInputLength != textInputInstallLength
   );
 }
