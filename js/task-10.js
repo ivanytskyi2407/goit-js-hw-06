@@ -20,7 +20,7 @@ function getAmout(event) {
 refs.createBtn.addEventListener('click', createBoxes);
 
 function createBoxes(amout) {
-  let widthHeight = 30;
+  let widthHeight = 20;
   for (let i = 0; i < amout; i++) { 
     widthHeight += 10;
 const newDiv = document.createElement('div');
