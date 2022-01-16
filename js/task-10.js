@@ -13,7 +13,8 @@ function getRandomHexColor() {
 refs.inputRef.addEventListener('blur', getAmout)
 
 function getAmout(event) {
-  createBoxes(Number(event.currentTarget.value))
+  createBoxes(Number(event.currentTarget.value));
+  event.currentTarget.value = '';
 }
 // Створити
 refs.createBtn.addEventListener('click', createBoxes);
